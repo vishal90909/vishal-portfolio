@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <!-- Monitor Icon -->
+  <symbol id="monitor" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M21 18H3v-1h18v1zm-1-2H4v-10h16v10zM20 3H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 1.99 2h16c1.1 0 1.99-.9 1.99-2L22 5c0-1.1-.89-2-1.99-2z"/>
+  </symbol>
+
+  <!-- Notes Icon -->
+  <symbol id="notes" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2h12c1.1 0 1.99-.9 1.99-2L20 4c0-1.1-.89-2-1.99-2zm-6 2h6v16H8V4z"/>
+  </symbol>
+
+  <!-- Laptop Icon -->
+  <symbol id="laptop" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M20 18V4c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v14H2v2h20v-2h-2zM6 4h12v14H6V4z"/>
+  </symbol>
+</svg>

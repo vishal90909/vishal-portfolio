@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>jessica</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+  <!--cdncss link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/lightbox.min.css">
+
+  <!--style sheet-->
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+  <!--svg icons-->
+  <svg style="display: none;">
+    <symbol id="monitor" viewBox="0 0 24 24">
+      <path fill="#4ba1a7"
+        d="M19 2H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h2.64l-.58 1a2 2 0 0 0 0 2a2 2 0 0 0 1.75 1h6.46A2 2 0 0 0 17 21a2 2 0 0 0 0-2l-.59-1H19a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3M8.77 20L10 18h4l1.2 2ZM20 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16Zm0-3H4V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z" />
+    </symbol>
+    <symbol id="notes" viewBox="0 0 24 24">
+      <path fill="#4ba1a7"
+        d="M16 14H8a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2m0-4h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2m4-6h-3V3a1 1 0 0 0-2 0v1h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H4a1 1 0 0 0-1 1v14a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V5a1 1 0 0 0-1-1m-1 15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6h2v1a1 1 0 0 0 2 0V6h2v1a1 1 0 0 0 2 0V6h2v1a1 1 0 0 0 2 0V6h2Z" />
+    </symbol>
+    <symbol id="laptop" viewBox="0 0 24 24">
+      <path fill="#4ba1a7"
+        d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1M6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16Z" />
+    </symbol>
+    <symbol id="menu" viewBox="0 0 24 24">
+      <path fill="black"
+        d="M4 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 12a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m7-7a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z" />
+    </symbol>
+  </svg>
+
+  <header id="top" class="position-sticky top-0 start-0 py-5" style="z-index:10;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-5">
+      <div class="container-fluid">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-uppercase ls-4" href="#Home"
+                style="font-size: 1.25rem; color: #333; margin-right: 30px;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase ls-4" href="#about"
+                style="font-size: 1.25rem; color: #333; margin-right: 30px;">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase ls-4" href="#project"
+                style="font-size: 1.25rem; color: #333; margin-right: 30px;">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase ls-4" href="#contact"
+                style="font-size: 1.25rem; color: #333; margin-right: 30px;">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase ls-4" href="#Testimonials"
+                style="font-size: 1.25rem; color: #333; margin-right: 30px;">Testimonials</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <section id="Home">
+    <div class="container my-5 py-5">
+      <div class="px-5 py-3 rounded-pill"
+        style="background-image: url('https://t4.ftcdn.net/jpg/05/42/10/81/360_F_542108178_NBs3R7cdYK5ie2H40CuUR3nc8UWq75h1.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="row justify-content-center align-items-center text-white py-2 rounded-3">
+          <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+            <img src="images/image-profile.jpeg" alt="Profile Picture" class="img-fluid rounded-pill" width="400"
+              height="450">
+          </div>
+          <div class="col-12 col-md-8 d-flex flex-column justify-content-center text-center text-md-start">
+            <p class="fs-4">Node Js Developer</p>
+            <h1 class="display-1">Vishal <br> Jaiswal</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-5 ">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-3">
+          <div class="d-flex gap-4 align-items-start">
+            <div class="icon">
+              <svg class="text-primary monitor" width="50" height="50">
+                <use xlink:href="#monitor"></use>
+              </svg>
+            </div>
+            <div class="text-md-start">
+              <h5>
+                NodeJs Developer
+              </h5>
+              <p class="postf">
+                Node.js, Express.js, Nest.js, Passport, OAuth, Mongodb, Socket.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="d-flex gap-4 align-items-start">
+            <div class="icon">
+              <svg class="text-primary notes" width="50" height="50">
+                <use xlink:href="#notes"></use>
+              </svg>
+            </div>
+            <div class="text-md-start">
+              <h5>
+                Projects
+              </h5>
+              <p class="postf">
+                Shahaya, CM-app, Wave dating app, Payever and Edulink Chatbot.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="d-flex gap-4 align-items-start">
+            <div class="icon">
+              <svg class="text-primary laptop" width="50" height="50">
+                <use xlink:href="#laptop"></use>
+              </svg>
+            </div>
+            <div class="text-md-start">
+              <h5>
+                API Development
+              </h5>
+              <p class="postf">
+                Designed and developed secure, scalable RESTful APIs with features like authentication, real-time
+                updates, and third-party integrations </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="h-100 bg-yellow p-4 rounded-4">
+            <h3>
+              Education
+            </h3>
+            <div class="py-4">
+              <p class="text-dark-emphasis">
+                2016 - 2020
+              </p>
+              <h5>
+                Bachelors of Technology
+              </h5>
+              <p class="text-dark-emphasis">
+                Chandigarh Engineering College
+              </p>
+            </div>
+            <p class="text-dark-emphasis">
+              2015 - 2016
+            </p>
+            <h5>
+              Intermediate
+            </h5>
+            <p class="text-dark-emphasis">
+              B.B.S Vidya Mandir
+            </p>
+            <p class="text-dark-emphasis">
+              2012 - 2013
+            </p>
+            <h5>
+              High School
+            </h5>
+            <p class="text-dark-emphasis">
+              B.B.S Vidya Mandir
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="h-100 bg-green p-4 rounded-4">
+            <h3>
+              Experiences
+            </h3>
+            <div class="py-4">
+              <p class="text-dark-emphasis">
+                2024 - Present
+              </p>
+              <h5>
+                Atrois Software Private Limited
+              </h5>
+              <p class="text-dark-emphasis">
+                Developing scalable APIs and backend systems for applications in industries like healthcare, logistics,
+                and dating. </p>
+            </div>
+            <p class="text-dark-emphasis">
+              2022 - 2023
+            </p>
+            <h5>
+              Klythe Private Limited
+            </h5>
+            <p class="text-dark-emphasis">
+              Built robust backend solutions using Node.js, Express.js, and MongoDB.
+              Led the development of RESTful APIs for customer-centric applications.
+              Collaborated with cross-functional teams to deliver secure and efficient web services. </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="h-100 bg-teal p-4 rounded-4">
+            <h3>
+              Interests
+            </h3>
+            <div class="py-4">
+              <ul>
+                <li>Backend Development: Exploring scalable and secure backend architectures.
+                </li>
+                <li>API Design: Crafting efficient and user-friendly APIs.
+                </li>
+                <li>Database Optimization: Working with MongoDB and MySQL to improve performance.</li>
+                <li>Open Source Contribution: Contributing to and learning from open-source projects.
+                </li>
+                <li>Cloud Technologies: Gaining deeper knowledge in AWS, Docker, and Kubernetes.
+                </li>
+                <li>Learning New Technologies: Staying updated on the latest trends in web development.
+                </li>
+                <li>Problem-Solving: Enjoy solving logical problems and puzzles.
+                </li>
+                <li>Gaming: Playing strategy or simulation games to relax and sharpen thinking.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="portfolio py-5" id="project">
+    <div class="container">
+      <div class="justify-content-center">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="section-header text-center">
+              <h4 class="fw-bold fs-2 txt-fx slide-up">
+                As a passionate Node.js developer, I am dedicated to creating efficient, scalable, and secure backend
+                solutions that power modern applications.
+            </div><!--section-header-->
+          </div>
+
+          <div id="filters" class="button-group d-flex flex-wrap gap-3 justify-content-center py-5" data-aos="fade-up">
+            <a href="#" class="btn btn-primary text-decoration-none text-uppercase is-checked"
+              data-filter=".photography">Projects</a>
+          </div>
+        </div>
+
+        <div class="grid p-0 clearfix row row-cols-2 row-cols-lg-3 row-cols-xl-4" data-aos="fade-up">
+          <div class="col mb-4 portfolio-item photography">
+            <a href="images/shahaya.png" data-lightbox="illustration-1" data-title="illustration-1"
+              title="Sample Caption goes here for Portfolio Item 1."><img src="images/shahaya.png"
+                class="img-fluid rounded-4" alt="portfolio"></a>
+
+          </div>
+          <div class="col mb-4 portfolio-item branding graphicdesign">
+            <a href="images/cm-app.png" data-lightbox="illustration-3" data-title="illustration-3"
+              title="Sample Caption goes here for Portfolio Item 3."><img src="images/cm-app.png"
+                class="img-fluid rounded-4" alt="portfolio"></a>
+          </div>
+          <div class="col mb-4 portfolio-item graphicdesign">
+            <a href="images/illustration-4.jpg" data-lightbox="illustration-4" data-title="illustration-4"
+              title="Sample Caption goes here for Portfolio Item 4."><img src="images/illustration-4.jpg"
+                class="img-fluid rounded-4" alt="portfolio"></a>
+          </div>
+          <div class="col mb-4 portfolio-item photography illustrations">
+            <a href="images/cm-app.png" data-lightbox="illustration-5" data-title="illustration-5"
+              title="Sample Caption goes here for Portfolio Item 5."><img src="images/cm-app.png"
+                class="img-fluid rounded-4" alt="portfolio"></a>
+          </div>
+          <div class="col mb-4 portfolio-item graphicdesign">
+            <a href="images/illustration-1.jpg" data-lightbox="illustration-1" data-title="illustration-1"
+              title="Sample Caption goes here for Portfolio Item 6."><img src="images/illustration-1.jpg"
+                class="img-fluid rounded-4" alt="portfolio"></a>
+          </div>
+          <div class="col mb-4 portfolio-item graphicdesign photography">
+            <a href="images/wave12.png" data-lightbox="illustration-2" data-title="illustration-2"
+              title="Sample Caption goes here for Portfolio Item 7."><img src="images/wave12.png"
+                class="img-fluid rounded-4" alt="portfolio"></a>
+          </div>
+          <div class="col mb-4 portfolio-item illustrations graphicdesign">
+            <a href="images/payever.png" data-lightbox="illustration-3" data-title="illustration-3"
+              title="Sample Caption goes here for Portfolio Item 8."><img src="images/payever.png"
+                class="img-fluid rounded-4" alt="portfolio"></a>
+          </div>
+          <div class="col mb-4 portfolio-item branding photography graphicdesign">
+            <a href="images/payever.png" data-lightbox="illustration-4" data-title="illustration-4"
+              title="Sample Caption goes here for Portfolio Item 9."><img src="images/payever.png"
+                class="img-fluid rounded-4" alt="portfolio"></a>
+          </div>
+          <div class="col mb-4 portfolio-item illustrations graphicdesign branding">
+            <a href="images/shahya-admin.png" data-lightbox="illustration-5" data-title="illustration-5"
+              title="Sample Caption goes here for Portfolio Item1 0."><img src="images/shahya-admin.png"
+                class="img-fluid rounded-4" alt="portfolio"></a>
+          </div>
+          <div class="col mb-4 portfolio-item photography">
+            <a href="images/shahya-admin.png" data-lightbox="illustration-1" data-title="illustration-1"
+              title="Sample Caption goes here for Portfolio Item1 1."><img src="images/shahya-admin.png"
+                class="img-fluid rounded-4" alt="portfolio"></a>
+          </div>
+          <div class="col mb-4 portfolio-item photography">
+            <a href="images/edulink.png" data-lightbox="illustration-1" data-title="illustration-1"
+              title="Sample Caption goes here for Portfolio Item1 1."><img src="images/edulink.png"
+                class="img-fluid rounded-4" alt="portfolio"></a>
+          </div>
+          <div class="col mb-4 portfolio-item photography">
+            <a href="images/edulink2.png" data-lightbox="illustration-1" data-title="illustration-1"
+              title="Sample Caption goes here for Portfolio Item1 1."><img src="images/edulink2.png"
+                class="img-fluid rounded-4" alt="portfolio"></a>
+          </div>
+
+        </div>
+
+        <div class="text-center p-3">
+          <a href="index.html" class="btn btn-outline-dark btn-lg mt-3 text-uppercase text-decoration-none">
+            View All Works
+          </a>
+        </div>
+
+      </div>
+  </section>
+
+  <section id="Testimonials">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="display-3 mb-5">
+          Testimonials
+        </h2>
+      </div>
+
+      <div class="swiper testimonial-swiper">
+        <div class="swiper-wrapper ">
+          <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
+            <div class="text-start">
+              <p>
+                "Working with Vishal has been an incredible experience. Their expertise in development and
+                leadership has been a guiding force in our projects. The solutions provided were always well thought
+                out, efficient, and executed with great attention to detail. I’ve learned a lot under their mentorship,
+                and their ability to drive projects to successful completion is something I deeply admire."
+              </p>
+              <h5>
+                Mansh - Backend Engineer
+              </h5>
+              <p class="postd">
+                8/20/2024
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
+            <div class="text-start">
+              <p>
+                "I had the pleasure of working with Vishal on several projects. Their technical expertise and guidance
+                were invaluable in executing frontend features effectively. Vishal ensured smooth collaboration
+                between backend and frontend teams, fostering a productive and innovative work environment. I learned a
+                lot under their leadership, and I’m grateful for the opportunity to work."
+              </p>
+              <h5>
+                Deepanshu - React Native Developer
+              </h5>
+              <p class="postd">
+                8/20/2024
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-card  rounded-3 py-4 px-4 swiper-slide">
+            <div class="text-start">
+              <p>
+                "It was a fantastic experience working alongside Vishal. Their strong technical skills and
+                leadership made a significant impact on our projects. Vishal ensured seamless integration between
+                the frontend and backend, always making sure that the project was on track and that the frontend
+                elements were implemented effectively. I’ve gained invaluable knowledge from their problem-solving"
+              </p>
+              <h5>
+                Ashu - FullStack Developer
+              </h5>
+              <p class="postd">
+                9/01/2024
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-swiper-pagination position-relative mt-5 text-center"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- <section>
+    <div class="container">
+      <div class="text-center pt-5">
+        <h2 class="display-3">
+          FAQs
+        </h2>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-6">
+          <img src="images/web-iamge.jpg" class="img-fluid">
+        </div>
+        <div class="col-lg-6">
+          <div class="accordion accordion-flush" id="accordion-flush">
+            <div class="accordion-item border mb-3 rounded-3">
+              <h5 class="accordion-header">
+                <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  What kind of projects do you work on?
+                </button>
+              </h5>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion-flush"" >
+                                <div class=" accordion-body">
+                <p>I work on a variety of web development projects, including backend and frontend applications, mobile
+                  app development, and API design. My focus is on delivering robust, user-friendly solutions tailored to
+                  client needs</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border mb-3 rounded-3">
+            <h5 class="accordion-header">
+              <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                What are your technical skills?
+              </button>
+            </h5>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+              <div class="accordion-body">
+                <p>I specialize in Node.js, Express.js, Nest.js, MongoDB, MySQL, Docker, Kubernetes, JWT, Passport, Git,
+                  OAuth
+                  and various payment gateways like Razorpay and Stripe. I'm also proficient in React.js for frontend
+                  development.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border mb-3 rounded-3">
+            <h5 class="accordion-header">
+              <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                How can I contact you for a project or collaboration?
+              </button>
+            </h5>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+              <div class="accordion-body">
+                <p>You can reach me through my contact page or directly via email at <a
+                    href="mailto:vishalashu251001@gmail.com">vishalashu251001@gmail.com</a>. I’d love to discuss
+                  how we can work together on your project..</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border mb-3 rounded-3">
+            <h5 class="accordion-header">
+              <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                aria-controls="collapseFour">
+                How do you ensure effective communication with your clients or teams? </button>
+            </h5>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+              <div class="accordion-body">
+                <p>I believe in clear, open communication throughout the project. I regularly provide updates, make sure
+                  to address any concerns promptly, and maintain transparency in every phase of development.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border mb-3 rounded-3">
+            <h5 class="accordion-header">
+              <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                aria-controls="collapseFive">
+                What is your approach to project management? </button>
+            </h5>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+              <div class="accordion-body">
+                <p>I use Agile methodologies to manage projects, ensuring flexibility and continuous delivery. I break
+                  down projects into manageable tasks, prioritize them, and make sure every milestone is met.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section> -->
+
+
+  <section>
+    <div class="container">
+      <div class="text-center pt-5">
+        <h2 class="display-3">FAQs</h2>
+      </div>
+      <div class="row mt-5 align-items-center">
+        <div class="col-lg-6">
+          <img src="images/web-iamge.jpg" class="img-fluid" alt="FAQs Image">
+        </div>
+        <div class="col-lg-6">
+          <div class="accordion accordion-flush" id="accordion-flush">
+            <div class="accordion-item border mb-3 rounded-3">
+              <h5 class="accordion-header">
+                <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  What kind of projects do you work on?
+                </button>
+              </h5>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion-flush">
+                <div class="accordion-body">
+                  <p>I work on a variety of web development projects, including backend and frontend applications, mobile
+                    app development, and API design. My focus is on delivering robust, user-friendly solutions tailored to
+                    client needs.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border mb-3 rounded-3">
+              <h5 class="accordion-header">
+                <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  What are your technical skills?
+                </button>
+              </h5>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                <div class="accordion-body">
+                  <p>I specialize in Node.js, Express.js, Nest.js, MongoDB, MySQL, Docker, Kubernetes, JWT, Passport, Git,
+                    OAuth, and various payment gateways like Razorpay and Stripe. I'm also proficient in React.js for
+                    frontend development.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border mb-3 rounded-3">
+              <h5 class="accordion-header">
+                <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+                  How can I contact you for a project or collaboration?
+                </button>
+              </h5>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                <div class="accordion-body">
+                  <p>You can reach me through my contact page or directly via email at <a
+                      href="mailto:vishalashu251001@gmail.com">vishalashu251001@gmail.com</a>. I’d love to discuss
+                    how we can work together on your project.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border mb-3 rounded-3">
+              <h5 class="accordion-header">
+                <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                  aria-controls="collapseFour">
+                  How do you ensure effective communication with your clients or teams?
+                </button>
+              </h5>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                <div class="accordion-body">
+                  <p>I believe in clear, open communication throughout the project. I regularly provide updates, make sure
+                    to address any concerns promptly, and maintain transparency in every phase of development.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border mb-3 rounded-3">
+              <h5 class="accordion-header">
+                <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                  aria-controls="collapseFive">
+                  What is your approach to project management?
+                </button>
+              </h5>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                <div class="accordion-body">
+                  <p>I use Agile methodologies to manage projects, ensuring flexibility and continuous delivery. I break
+                    down projects into manageable tasks, prioritize them, and make sure every milestone is met.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="p-5 bg-yellow py-5 mt-3" id="contact">
+    <div class="container">
+      <div class="row justify-content-center my-5">
+        <div class="col-md-5">
+          <h6>
+            Quick Contact
+          </h6>
+          <h2 class="display-3">
+            Leave a Message
+          </h2>
+        </div>
+        <div class="col-md-5">
+          <div class="mb-3">
+            <input type="name" class="form-control p-3 rounded-4" name="name" id="name" aria-describedby="nameHelpId"
+              placeholder="your name" />
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control p-3 rounded-4" name="email" id="email"
+              aria-describedby="emailHelpId" placeholder="your email" />
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control p-3 rounded-4" name="your message" placeholder="your message" id="message"
+              rows="3"></textarea>
+          </div>
+          <div class="d-grid">
+            <button type="button" class="btn btn-dark btn-lg text-uppercase rounded-4">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="bg-black text-white py-5">
+    <div class="container-sm">
+      <div class="row g-md-5 my-5">
+        <div class="col-md-4">
+          <div class="info-box">
+            <p class="font-weight-bold display-5">Vishal Jaiswal</p>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/vishal-jaiswal-5169b0197/" target="_blank">
+                <i class="bi bi-linkedin" style="font-size: 30px; color: #0077b5;"></i>
+              </a>
+              <a href="https://github.com/vishal90909" target="_blank">
+                <i class="bi bi-github" style="font-size: 30px; color: #333;"></i>
+              </a>
+              <!-- Twitter Icon -->
+              <a href="https://twitter.com" target="_blank">
+                <i class="bi bi-twitter" style="font-size: 30px; color: #1da1f2;"></i>
+              </a>
+              <!-- WhatsApp Icon -->
+              <a href="https://wa.me/yourphonenumber" target="_blank">
+                <i class="bi bi-whatsapp" style="font-size: 30px; color: #25D366;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="row">
+          
+          </div>
+        </div>
+        <div class="col-md-5">
+          <p>
+            Just feel free to contact if you wanna collaborate with me, or simply have a conversation.
+          </p>
+          <h3>
+            <a href="mailto:vishalashu251001@gmail.com"
+              class="text-white text-decoration-none">vishalashu251001@gmail.com</a>
+            <h5>Contact: +918602026277</h5>
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+      </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a.nav-link').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        targetSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    });
+  </script>
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="js/jquery-1.11.0.min.js"></script> <!-- jquery file-->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> <!--cdn link-->
+  <script src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/lightbox.min.js"></script>
+
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
