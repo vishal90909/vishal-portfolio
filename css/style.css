@@ -33,6 +33,74 @@
     --swiper-pagination-color: #F0756C;
 }
 
+/* Highlighted border style */
+/* Highlight border with smooth transition */
+/* Highlight border with smooth transition */
+/* Highlight border and shadow on hover */
+/* Highlight border and shadow on hover */
+/* Highlight with dark shadow on hover */
+#about .h-100:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Dark shadow on hover */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background with transparency on hover */
+    transform: scale(1.02); /* Slight zoom-in effect */
+    transition: all 0.4s ease-in-out; /* Smooth animation */
+}
+
+/* Default state without hover effect */
+#about .h-100 {
+    border: 2px solid transparent; /* Default transparent border */
+    transition: all 0.4s ease; /* Smooth reset */
+}
+
+/* Ensure initial state of the text is off-screen to the left */
+.dynamic-text {
+    opacity: 0; /* Start as invisible */
+    transform: translateX(-100%); /* Position off-screen to the left */
+    transition: all 0.5s ease-out;
+  }
+  
+  /* When the element is in view, animate the text */
+  .dynamic-text.visible {
+    opacity: 1; /* Make it visible */
+    transform: translateX(0); /* Move to original position */
+    transition: all 0.8s ease-out; /* Smooth transition */
+  }
+  
+  /* Add shadow on hover for portfolio images */
+.portfolio-item img {
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* On hover, apply shadow and scale effect */
+.portfolio-item img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transform: scale(1.05); /* Slightly zoom in */
+}
+
+.download-btn {
+    position: fixed;
+    top: 55px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .download-btn i {
+    margin-right: 8px; /* Space between icon and text */
+  }
+
+  /* Hover effect */
+  .download-btn:hover {
+    background-color: #0056b3;
+  }
+
 .description {
     font-size: 14px;
     color: #333;
