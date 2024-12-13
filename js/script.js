@@ -73,3 +73,48 @@
   };
 
 })(jQuery);
+
+document.getElementById("submitBtn").addEventListener("click", function () {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    if (!name || !email || !message) {
+      alert("Please fill in all the fields.");
+      return;
+    }
+
+    const data = JSON.stringify({
+      name: name,
+      email: email,
+      message: message,
+    });
+
+    fetch("https://portfolio-backend-kohl-eight.vercel.app/v1/auth/send-message", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": "Basic e0FjY291bnRTaWR9OntBdXRoVG9rZW59",
+      },
+      body: data,
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((responseData) => {
+        console.log(responseData);
+        alert("Message sent successfully!");
+
+        // Clear input fields
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("There was an error sending your message.");
+      });
+  });
