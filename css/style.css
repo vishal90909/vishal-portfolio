@@ -189,11 +189,22 @@ h2,h3,h4,h5,h6 {
     font-weight: 700;
 }
 .display-1 {
-    font-size: calc(4.375rem + 4.5vw);
-    font-weight: 900 ;
+    font-size: calc(4rem);
+    font-weight: 700 ;
     font-family: var(--body-font); 
     line-height: 80%;
 }
+
+
+@media (min-width: 768px) {
+    .display-1 {
+        font-size: calc(4.375rem + 4.5vw);
+        font-weight: 900 ;
+        font-family: var(--body-font); 
+        line-height: 80%;
+    }
+}
+
 .display-2,
 .display-3,
 .display-4,
@@ -323,3 +334,4 @@ a:hover {
     background-color: var(--bs-pagination-active-bg);
     border-color: var(--bs-pagination-active-border-color);
 }
+
